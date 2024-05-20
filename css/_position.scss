@@ -1,0 +1,28 @@
+label img {
+    position: absolute;
+    width: 100px;
+    height: 200px;
+    top: 40px;
+    z-index: 100;
+    border-radius: 30%;
+}
+
+label img.light {
+    left:40px;
+    fill: #fff;
+    transition: 0.3s;
+}
+
+label img.dark {
+    left:340px;
+    fill: #7e7e7e;
+    transition: 0.3s;
+}
+
+input:checked + label img.light{
+    fill: #7e7e7e;
+}
+
+input:checked + label img.dark{
+    fill: #fff;
+}
